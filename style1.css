@@ -1,0 +1,125 @@
+/* .p1{
+    color: blue;
+    font-size: 100px;
+}
+#pa{
+    color: red;
+}
+input[type="text"]{
+    color: red;
+}
+
+.x{
+    
+    height: 100px;
+    width: 100px;
+    background: grey;
+
+   /* border-width: 5px;
+   border-color: brown;
+   border-style: solid;  */
+   /* border: 5px red solid ;
+   border-radius: 50%; 
+} */
+
+/* div{
+    color: violet;
+}
+
+h1{
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: tomato;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    
+}  */
+
+/* .images{
+    height: 1000px;
+    width: 300px;
+    border: 10px black solid;
+    background-color: rgba(100, 50, 255, 0.123) ;
+    background-image: url("image.jpg");
+    background-size: 50px 50px;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    background-position: 100px 100px ;
+} */
+
+/* .name{
+    border: 5px black solid;
+   padding: 30px 40px ;
+    width: 50%;
+    margin-left: 25%;
+    
+   
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+
+}
+a:hover{
+    color: red;
+    font-size: 50px;
+    
+
+} */
+
+/* div{
+    background: red; 
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 20px; 
+    display: inline;
+}
+span{
+background: blue;
+padding: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 20px;  
+display: inline-block;
+} */
+
+/* .t1{ 
+    height: 200px;
+    width: 200px;
+    background-color: aqua; 
+    overflow: auto;
+} */
+
+/* ul{
+    list-style-type: none;
+    
+} */
+/* .container{
+    background: gray;
+} */
+/* .container div{
+    float: left;
+    width: 25%; */
+    /* display: inline-block; */
+/* } */
+/* .clear{
+    clear: both;
+} */
+/* .test1{
+    background: red;
+    width: 60px;
+    position: absolute;
+    top:100px;
+}
+.test2{
+    background:blue;
+    width: 60px;
+} */

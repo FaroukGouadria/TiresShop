@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09161d;
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s;
+    background-color: rgba(0, 0,0,0);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    height: 120px;
+
+}
+
+nav .logo{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin: 0px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    
+    text-decoration: none;
+    transition: 0.8s;
+} 
+/*
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+} */
+
+nav .logo span{
+    color: red;
+    
+}
+ 
+nav span:hover{
+    font-size: 50px;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    margin: 20px 0px; 
+    list-style: none;
+   
+
+}
+
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Ultra', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:all 0.5s ease;
+     font-family: 'Gemunu Libre', sans-serif;
+}
+.navitem :hover{
+     cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+   
+    font-family: 'Ultra', serif;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0,0,0.5);
+    height: 780px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:  0;
+    background: url("./background.jpg") no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.slogon{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+}
+.btn{
+     padding: 10px 35px;
+     background-color: transparent;
+     border: 1px solid white;
+     outline: none;
+     transition: .8s ease-in-out;
+     color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    background :rgb(224, 224, 224);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.container{
+    position: relative;
+    top: 20px;
+     height: 150px;
+    }
+
+.container h1{
+   
+    position: relative;  
+    text-align: center;
+    top: 20px;
+    font-size: 3rem;
+    bottom: 20px;
+}
+
+.about_text{
+   
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    right: 10%;
+    opacity: 0.5;
+   }
+.about_text p{
+    color: black;
+    font-size: 26px;
+}
+.about_text:hover{
+    opacity: 1;
+    
+}
+
+.about_image{
+    background:url("./about.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;   
+    border: 3px solid black;
+    position: absolute;
+    left: 10%;
+
+}   
+
+.upbtn{
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    padding: 6px;
+    border-radius: 4px;
+    position:absolute ;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999999;
+    cursor: pointer;
+}
+
+.product{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09161d;
+    min-height: 500px;
+    min-width: 100%;  
+    
+    
+}
+.card{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    background: #c22929;
+    border-radius:20px ;
+    overflow: hidden;
+
+    
+}
+.card::before{
+    content: "";
+    position:absolute ;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #fbfcfd;
+    transform: skewY(345deg);
+    transition: 0.5s;
+
+
+}
+
+.card:hover::before{
+top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after{
+content: "SAMS";
+position: absolute;
+bottom: 0;
+left: 0;
+font-weight: 600;
+font-size: 7em;
+color: rgba(0, 0, 0, 0.1);
+}
+.card .imgbox{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+
+}
+.card .imgbox {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .imgbox {
+    max-width: 50%;
+}
+.contentbox{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.contentbox h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.contentbox .price{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contentbox .buy{
+    position: relative;
+    top: 180x;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px ;
+    transition: 1s;
+
+}
+
+ .card:hover .contentbox .buy{
+     top:0;
+     opacity: 1;
+     transition: 1s;
+ }
+
+
+ .buy:hover{
+      cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+ }
+
+
+ /* card1 */
+
+ .card1{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    background: #c22929;
+    border-radius:20px ;
+    overflow: hidden;
+    left: 10%;
+
+
+    
+}
+.card1::before{
+    content: "";
+    position:absolute ;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #fbfcfd;
+    transform: skewY(345deg);
+    transition: 0.5s;
+
+
+}
+
+.card1:hover::before{
+top: -70%;
+    transform: skewY(390deg);
+}
+
+.card1::after{
+content: "SAMS";
+position: absolute;
+bottom: 0;
+left: 0;
+font-weight: 600;
+font-size: 7em;
+color: rgba(0, 0, 0, 0.1);
+}
+.card1 .imgbox{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+
+}
+.card1 .imgbox {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card1:hover .imgbox {
+    max-width: 50%;
+}
+.contentbox{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.contentbox h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.contentbox .price{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contentbox .buy{
+    position: relative;
+    top: 180x;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px ;
+    transition: 1s;
+
+}
+
+ .card1:hover .contentbox .buy{
+     top:0;
+     opacity: 1;
+     transition: 1s;
+ }
+
+
+ .buy1:hover{
+      cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+ }
+
+
+ 
+ /* cardé */
+
+ .card2{
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    background: #c22929;
+    border-radius:20px ;
+    overflow: hidden;
+    left: 68%;
+
+
+    
+}
+.card2::before{
+    content: "";
+    position:absolute ;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #fbfcfd;
+    transform: skewY(345deg);
+    transition: 0.5s;
+
+
+}
+
+.card2:hover::before{
+top: -70%;
+    transform: skewY(390deg);
+}
+
+.card2::after{
+content: "SAMS";
+position: absolute;
+bottom: 0;
+left: 0;
+font-weight: 600;
+font-size: 7em;
+color: rgba(0, 0, 0, 0.1);
+}
+.card2 .imgbox{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+
+}
+.card2 .imgbox {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card2:hover .imgbox {
+    max-width: 50%;
+}
+.contentbox{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.contentbox h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.contentbox .price{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contentbox .buy{
+    position: relative;
+    top: 180x;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px ;
+    transition: 1s;
+
+}
+
+ .card2:hover .contentbox .buy{
+     top:0;
+     opacity: 1;
+     transition: 1s;
+ }
+
+
+ .buy:hover{
+      cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white,0 0 15px white ;
+    font-weight: bolder;
+    font-size: 20px;
+ }
