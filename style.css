@@ -219,8 +219,7 @@ nav ul li a{
     z-index: 999999999;
     cursor: pointer;
 }
-
-.product{
+#product{
      display: flex;
     justify-content: center;
     align-items: center;
